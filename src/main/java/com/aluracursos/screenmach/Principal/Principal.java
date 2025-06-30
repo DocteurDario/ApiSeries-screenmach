@@ -28,7 +28,7 @@ public class Principal {
     public void muestraElMenu(){
         System.out.println("Por favor escribir el nombre de la serie que deseas buscar");
 
-        //Busca los datos generales de las series
+        //Busca los datos generales de las series kpkpkpkpp
         var nombreSerie = teclado.nextLine();
         var json = consumoApi.obtenerDatos(URL_BASE + nombreSerie.replace(" ","+") + API_KEY);
         var datos = convierte.obtenerDatos( json , DatosSerie.class);
